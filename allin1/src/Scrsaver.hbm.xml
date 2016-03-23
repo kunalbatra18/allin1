@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- To change this license header, choose License Headers in Project Properties. 
+	To change this template file, choose Tools | Templates and open the template 
+	in the editor. -->
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+
+<hibernate-mapping>
+	<class name="ideawap.content.table.Scrsaver" table="Scrsaver">
+
+		<id name="code" type="int" length="11">
+			<column name="code" />
+			<generator class="increment" />
+		</id>
+
+		<property name="name" type="java.lang.String" length="250">
+			<column name="name" />
+		</property>
+		<property name="prv" type="java.lang.String" length="250">
+			<column name="prv" />
+		</property>
+		<property name="src_type" type="java.lang.String" length="10">
+			<column name="src_type" />
+		</property>
+		<property name="src_stream" type="java.lang.String" length="250">
+			<column name="src_stream" />
+		</property>
+
+
+
+		<property name="cat" type="java.lang.String" length="250">
+			<column name="cat" />
+		</property>
+
+
+		<property name="pricetag" type="java.lang.String" length="10">
+			<column name="pricetag" />
+		</property>
+
+		<property name="cat_type" type="java.lang.String" length="50">
+			<column name="cat_type" />
+		</property>
+
+		<property name="status" type="string">
+			<column name="status" sql-type="char(1)" />
+
+		</property>
+		<property name="live" type="java.lang.String" length="1">
+			<column name="live" />
+		</property>
+
+
+
+		<property name="timestamp" type="timestamp">
+			<column name="timestamp" />
+		</property>
+
+
+	</class>
+</hibernate-mapping>
