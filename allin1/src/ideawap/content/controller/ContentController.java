@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class ContentController {
+public class ContentControllerGit {
 	
 	@RequestMapping("/index")
 	public String process() {
